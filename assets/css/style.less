@@ -1,0 +1,123 @@
+
+// Colores
+@very-dark-blue: hsl(217, 54%, 11%);
+@dark-blue-card: hsl(216, 50%, 16%);
+@blue-line: hsl(215, 32%, 27%);
+@White: hsl(0, 0%, 100%);
+@Soft-blue: hsl(215, 51%, 70%);
+@Cyan: hsl(178, 100%, 50%);
+
+//Fuentes
+@outfit: 'Outfit', sans-serif;
+
+// Font weights_type
+@regular: 300;
+@medium: 400;
+@bold: 600;
+
+
+// Estilos Generales
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 18px;
+    font-family: @outfit;
+    background-color: @very-dark-blue;
+    color: @Soft-blue;
+    text-align: center;
+}
+
+main{
+    background-color: @dark-blue-card;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 3%;
+}
+
+img {
+    max-width: 100%;
+    background-position: center;
+    border-radius: 5%;
+    margin-top: 2rem;
+    opacity: 0.8;
+    &:hover{
+        background-color: @Cyan;
+        opacity: 0.4;
+        background: fade(@Cyan, 40%);
+        width: 100%;
+        cursor: pointer;
+        transition: all .3s ease;
+    }
+}
+
+span{
+    color: @White;
+}
+
+.container{
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+    .card {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: relative;
+        bottom: -20%;
+    }
+}
+
+
+.text{
+    margin: 1.5rem 0;
+    h1{
+        color:@White;
+    }
+    p{
+        margin: 1.5rem 0;
+    }
+}
+
+.dates{
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    & a:nth-child(1){
+        color:hsl(178, 100%, 50%);
+        font-size: 1.5rem;
+        font-weight: @bold;
+    }
+    & a:nth-child(2) {
+        color: @Soft-blue;
+        font-size: 1.5rem;
+        font-weight: @regular
+    }
+}
+
+.creator{
+    border-top: 2px solid @blue-line;
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    img{
+        border: 3px solid @blue-line;
+        border-radius: 100%;
+        width: 15%;
+        margin-bottom: 1.7rem;
+    }
+}
+
+
+
+
+
+
+
+
+

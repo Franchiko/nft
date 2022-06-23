@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  text-align: center;
+}
+main {
+  background-color: hsl(216, 50%, 16%);
+  width: 90%;
+  margin: 2rem auto;
+  border-radius: 3%;
+}
+img {
+  max-width: 100%;
+  background-position: center;
+  border-radius: 5%;
+  margin-top: 2rem;
+  opacity: 0.8;
+}
+img:hover {
+  background-color: hsl(178, 100%, 50%);
+  opacity: 0.4;
+  background: hsla(178, 100%, 50%, 0.4);
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+span {
+  color: hsl(0, 0%, 100%);
+}
+.container {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.container .card {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+  bottom: -20%;
+}
+.text {
+  margin: 1.5rem 0;
+}
+.text h1 {
+  color: hsl(0, 0%, 100%);
+}
+.text p {
+  margin: 1.5rem 0;
+}
+.dates {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+}
+.dates a:nth-child(1) {
+  color: hsl(178, 100%, 50%);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.dates a:nth-child(2) {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.creator {
+  border-top: 2px solid hsl(215, 32%, 27%);
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.creator img {
+  border: 3px solid hsl(215, 32%, 27%);
+  border-radius: 100%;
+  width: 15%;
+  margin-bottom: 1.7rem;
+}
